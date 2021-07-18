@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina Principal</title>
+	<meta name="author"
+			content="Lizeth Melania Satian Valencia ">
+	<meta name="description"
+			content="Sitio Web referente a los valores humanos">
+	<meta name="keywords"
+			content="HTML, Valores, Humanos, Amor, Honestidad">
+	<meta charset="UTF-8">
+	<link
+		rel="shortcut icon"
+		type="image/x-png"
+		href="iconos/logovalores.png">
+
+	<!-- Lizeth Melania Satian Valencia Diseño de Paginas Webcon HTML-->
+
+	<style>
+		
+		body {
+		  margin: 0;
+		  padding: 0;
+		  background-image: url("animefondo.png");
+		  background-repeat: no-repeat;
+		  background-position: 50% 50%;
+		  background-size: 1578px 945px;
+		  background-attachment: fixed;
+		}
+		 /*BARRA SUPERIOR*/
+		.nav ul {
+		  list-style: none;
+		  background-color: #444;
+		  text-align: center;
+		  padding: 0;
+		  margin: 0;
+		}
+		.nav li {
+		  font-family: 'abeatbyKai', abeatbyKai;
+		  font-size: 1.2em;
+		  line-height: 40px;
+		  height: 40px;
+		  border-bottom: 1px solid #888;
+		}
+		 
+		.nav a {
+		  text-decoration: none;
+		  color: #fff;
+		  display: block;
+		  transition: .3s background-color;
+		}
+		 
+		.nav a:hover {
+		  background-color: #C0C0C0;
+		}
+		 
+		.nav a.active {
+		  background-color: #fff;
+		  color: #444;
+		  cursor: default;
+		}
+		 
+		@media screen and (min-width: 600px) {
+		  .nav li {
+		    width: 120px;
+		    border-bottom: none;
+		    height: 50px;
+		    line-height: 50px;
+		    font-size: 1.4em;
+		  }
+		 
+		  /* Option 1 - Display Inline */
+		  .nav li {
+		    display: inline-block;
+		    margin-right: -4px;
+		  }
+		 
+		  /* Options 2 - Float
+		  .nav li {
+		    float: left;
+		  }
+		  .nav ul {
+		    overflow: auto;
+		    width: 600px;
+		    margin: 0 auto;
+		  }
+		  .nav {
+		    background-color: #444;
+		  }
+		  */
+		  /*BARRA INFERIOR*/
+		.nav2 ul {
+		  list-style: none;
+		  background-color: #444;
+		  text-align: center;
+		  padding: 0;
+		  margin: 0;
+		  position: fixed;
+		  bottom: 0;
+		  left: 20%;
+		}
+		.nav2 li {
+		  font-family: 'abeatbyKai', abeatbyKai;
+		  font-size: 1.2em;
+		  line-height: 40px;
+		  height: 40px;
+		  border-bottom: 1px solid #888;
+		}
+		 
+		.nav2 a {
+		  text-decoration: none;
+		  color: #fff;
+		  display: block;
+		  transition: .3s background-color;
+		}
+		 
+		.nav2 a:hover {
+		  background-color: #C0C0C0;
+		}
+		 
+		.nav2 a.active {
+		  background-color: #fff;
+		  color: #444;
+		  cursor: default;
+		}
+		 
+		@media screen and (min-width: 600px) {
+		  .nav2 li {
+		    width: 120px;
+		    border-bottom: none;
+		    height: 50px;
+		    line-height: 50px;
+		    font-size: 1.4em;
+		  }
+		 
+		  /* Option 1 - Display Inline */
+		  .nav2 li {
+		    display: inline-block;
+		    margin-right: -4px;
+		  }
+		 
+		  /* Options 2 - Float
+		  .nav li {
+		    float: left;
+		  }
+		  .nav ul {
+		    overflow: auto;
+		    width: 600px;
+		    margin: 0 auto;
+		  }
+		  .nav {
+		    background-color: #444;
+		  }
+		  */
+		}
+		/*MENU SECUNDARIO*/
+		}h1 {
+		  margin: 40px 0;
+		  font-size: 30px;
+		  font-weight: 300;
+		  text-align: center;
+		}
+
+		#secundario ul {
+			font-family: 'abeatbyKai', abeatbyKai;
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		    background-color: #333;
+		}
+
+		#secundario li {
+		    float: left;
+		}
+
+		#secundario li a, .dropbtn {
+		    display: inline-block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		}
+
+		#secundario li a:hover, .dropdown:hover .dropbtn {
+		    background-color: gray;
+		}
+
+		#secundario li.dropdown {
+		    display: inline-block;
+		}
+
+		#secundario .dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f9f9f9;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		#secundario .dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		    text-align: left;
+		}
+
+		#secundario .dropdown-content a:hover {background-color: #f1f1f1}
+
+		#secundario .dropdown:hover .dropdown-content {
+		    display: block;
+		}
+		/*GALERIA PRINCIPAL*/
+			* { 
+			    
+			    margin: 0;
+			    padding: 0;
+			  }
+			  body {
+			    font-size: 15px;
+			    font-family: helvetica, arial, sans-serif;
+			    padding: 1em;
+			  }
+			  footer, section, article, header, aside, figure, nav {
+			    display: block;
+			  }
+			  nav {
+			    padding: 5px;
+			    z-index: 0;
+			    top: 0px;
+			    left: 0;
+			    position: absolute;
+			  }
+
+			  nav li {
+			    display: inline;
+			    padding-right: 1em;
+			  }
+			  nav a {
+			    background: #000000;
+			    padding: 5px 10px;
+			    border-radius: 10px;
+			    color: #fff;
+			    font-weight: bold;
+			    text-decoration: none;
+			  }
+			  nav a:hover, nav a:focus {
+			    background: #DCDCDC;
+
+			  }
+			  footer {
+			    clear: both;
+			    font-size: 10px;
+			  }
+			  footer a {
+			    color: #000;
+			  }
+			  
+			  
+			
+</style>
+</head>
+
+<body>
+	
+	<header>
+		<div class="nav">
+			<ul>
+			<li>
+				<a  href="index.html">¿HTML?</a>
+			</li>
+			<li>
+				<a  href="creacion.html">Creacion</a>
+			</li>
+			<li>
+				<a  href="valores.html">Valores</a>
+			</li>
+			<li>
+				<a class="active" href="clasificacion.html">Clasificacion</a>
+			</li>
+			<li>
+				<a href="hoy.html">Hoy</a>
+			</li>
+			<li>
+				<a href="familia.html">Familia</a>
+			</li>
+			<li>
+				<a href="escuela.html">Escuela</a>
+			</li>
+		</ul>
+		</div>
+		
+	</header>
+
+	<a name="#"></a>
+
+	<div id="secundario">
+		<ul>
+		 
+		  <li class="dropdown">
+		    <a href="#" class="dropbtn">Clasificacion de los valores</a>
+		    <div class="dropdown-content">
+		      <a href="#honestidad">Honestidad</a>
+		      <a href="#confianza">Confianza</a>
+		      <a href="#amor">Amor</a>
+		      <a href="#perdon">Perdon</a>
+		      <a href="#patriotismo">Patriotismo</a>
+		      <a href="#integridad">Integridad</a>
+		      <a href="#perseverancia">Perseverancia</a>
+		      <a href="#dignidad">Dignidad</a>
+		      <a href="#optimismo">Optimismo</a>
+		      <a href="#solidaridad">Solidaridad</a>
+		      <a href="#voluntad">Voluntad</a>
+		      <a href="#moralidad">Moralidad</a>
+		      <a href="#responsabilidad">Responsabilidad</a>
+		      <a href="#generosidad">Generosidad</a>
+		      <a href="#alegria">Alegria</a>
+		      <a href="#bondad">Bondad</a>
+		      <a href="#justicia">Justicia</a>
+		      <a href="#libertad">Libertad</a>
+		    </div>
+		  </li>
+		</ul>
+		</div>
+
+	<br><br>
+	
+	<div style="text-align: center; background-color: white;  font-size: 24px; margin-right: 20px; margin-right: auto; border: black 2px solid; font-weight: bold; margin: 20px " >
+	<br>
+	
+	<div id="contenedor">
+    
+<h1>CLASIFICACIÓN DE LOS VALORES HUMANOS</h1>
+				
+				<p >Se los puede clasificar en:<br>
+				Valores políticos-Sociales.- Son aquellos  que  contribuyen  a la  convivencia  del<br>  hombre en la   sociedad, entre  esto encontramos la justicia, la paz, la  libertad y la democracia.<br>
+				Valores Éticos-Morales.-  Están relacionados con la dignidad e integridad de los seres humanos, <br>y pueden ser la fidelidad, la honestidad, la franqueza, el amor la responsabilidad.<br>
+				Valores Estéticos.- Tiene por  objeto el estudio de la esencia  y la  percepción de la belleza<br> y se encuentran relacionado con la belleza, la armonía y la coherencia.<br>
+</p >
+<br>
+<br>
+<br>
+<br>
+  	
+  	<a name="honestidad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Honestidad</h2>
+	<br>
+  <p>Como honestidad se designa la cualidad de honesto. <br>Como tal, hace referencia a un conjunto de atributos personales, como la decencia, <br>el pudor, la dignidad, la sinceridad, la justicia, <br>la rectitud y la honradez en la forma de ser y de actuar.<br>
+La honestidad es un valor moral fundamental para entablar relaciones <br>interpersonales basadas en la confianza, la sinceridad <br>y el respeto mutuo<br>
+Una persona que actúa con honestidad lo hace siempre apoyada en valores <br>como la verdad y la justicia, y no antepone a estos sus propias necesidades o intereses. <br>En este sentido, es una persona apegada a un código de conducta <br>caracterizado por la rectitud, la probidad y la honradez.
+</p>
+  
+	<br>
+  <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/N9rI8EhLomU">
+		</center>
+<br>
+
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="confianza"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Confianza</h2>
+	<br>
+  <p>Confianza puede referirse a varias cosas: la seguridad en nosotros mismos, la esperanza <br>de que algo se desarrolle conforme nuestras expectativas, <br>o la familiaridad que tenemos en el trato con alguien. <br>
+La confianza, entendida como la seguridad que cada persona tiene en sí misma, <br>es una cualidad de gran valor en todos los ámbitos de la actividad humana. <br>Es fundamental en la escuela, el trabajo, los negocios, así como en el medio empresarial,<br> comercial, artístico o académico.<br>
+La confianza nos ayuda a seguir adelante con nuestros propósitos pese <br>a los reveses, el desánimo o las dificultades. <br>En este sentido, implica la convicción de que, valiéndonos <br>de nuestras fortalezas y virtudes, seremos capaces de lograr lo que nos propongamos.
+
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/WHGcL1F2xxs">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="amor"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Amor</h2>
+	<br>
+  <p>El amor es uno de los valores más importantes. <br>Es la fuerza que nos impulsa para hacer las cosas bien, por eso es considerado<br> un valor que tiene muy clara la diferencia entre el bien y el mal.<br>
+El amor es un sentimiento moral, pues nos induce a actuar bien en nuestra vida <br>y con las personas que amamos. Además, nos lleva a tener una vida plena de paz, tranquilidad y alegría, <br>y en consecuencia, de bienestar con nosotros mismos.
+
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/4YZoI7vBSNg">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="perdon"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Valor del perdon</h2>
+	<br>
+  <p>El perdón puede servir, por un lado, al ofensor para liberarse de la culpa y por otro lado,<br> para que el ofendido se libere de posibles sentimientos de rencor. <br>El perdón no siempre implica que el ofensor no tenga que compensar de algún otro modo su error.<br>
+Se suele valorar el hecho de saber perdonar, aunque también el saber pedir perdón,<br> porque implica de algún modo, reconocer la culpa y el daño cometido a la otra persona. <br>En Psicología, ambas acciones se consideran capacidades del ser humano, <br>que también suelen tener efectos terapéuticos positivos.
+
+
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/2Gy5zCsfVX0">
+		</center>
+  <br>
+	<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="patriotismo"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Patriotismo</h2>
+	<br>
+  <p>Es el sentimiento que tiene un ser humano por la tierra natal o adoptiva<br> a la que se siente ligado por unos determinados valores, afectos, cultura e historia;<br> es el equivalente colectivo al orgullo que siente una persona por pertenecer a una familia <br>o también a una nación. Para otros existen otros ejemplos menos extremos, <br>como desplegar la bandera nacional, cantar el himno o defender<br> o apoyar el país al que pertenece uno por otros medios 
+
+
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/qjc3axo_ypE">
+		</center>
+  <br>
+	<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="integridad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Integridad</h2>
+	<br>
+  <p>Es un valor y una cualidad de quien tiene entereza moral, rectitud y honradez en la conducta <br>y en el comportamiento. En general, una persona íntegra es alguien en quien se puede confiar.<br>
+Como derecho fundamental, la integridad personal o física se relaciona al derecho a no ser objeto <br>de vulneraciones en la persona física, tales como lesiones, torturas, <br>tratos inhumanos, penas crueles, o la muerte. <br>En este sentido, ser íntegro significa tener salud, estar entero, sin daños.<br> Una persona íntegra es también aquella que no se queda en una sola actividad, <br>sino que se mueve por las distintas áreas del conocimiento, posee una amplia <br>gama de aptitudes y capacidades.<br>
+La integridad moral se define como la cualidad de una persona que la condiciona <br>y le da autoridad para tomar decisiones sobre su comportamiento y resolver los problemas<br> relacionados con sus acciones por sí misma.<br> Está relacionada con los pensamientos, los comportamientos, las ideas, <br>las creencias y la forma de actuar de cada individuo.
+
+
+
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/iBbIblu20sc">
+		</center>
+  <br>
+	<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="perseverancia"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Perseverancia</h2>
+	<br>
+  <p>Es un esfuerzo continuo. <br>Es alcanzar lo que se propone y buscar soluciones a las dificultades que puedan surgir. <br>Es un valor fundamental en la vida para obtener un resultado concreto. <br>De esta forma se obtiene la fortaleza y esto nos permite no dejarnos <br>llevar por lo fácil y lo cómodo. <br>Por esto, es muy importante que los niños aprendan a ser perseverantes. <br>Les brindará de estabilidad, confianza en sí mismos, y madurez.
+
+
+
+</p>
+ 
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/WhOkc4ZvjOU">
+		</center>
+  <br>
+	<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="dignidad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Dignidad</h2>
+	<br>
+  <p>La dignidad humana significa que un individuo siente respeto por sí mismo <br>y se valora al mismo tiempo que es respetado y valorado.<br> Implica la necesidad de que todos los seres humanos sean tratados en <br>un pie de igualdad y que puedan gozar de los derechos fundamentales que de ellos derivan.<br> Poseemos dignidad en tanto somos moralmente libres, <br>por ser autónomos, igualados a otros de la propia ley.
+
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/ZPVB_fTBOCc">
+		</center>
+  <br>
+	<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+
+<a name="optimismo"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Optimismo</h2>
+	<br>
+  <p>El optimismo es el valor que nos ayuda a enfrentar las dificultades<br> con buen ánimo y perseverancia, descubriendo lo positivo<br> que tienen las personas y las circunstancias, <br>confiando en nuestras capacidades y posibilidades <br>junto con la ayuda que podemos recibir.
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/u_XjPW06cAc">
+		</center>
+  <br>
+	<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+<br><br><br>
+		<a name="solidaridad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Solidaridad</h2>
+	<br>
+  <p>La solidaridad es un valor que se caracteriza por la colaboración mutua entre los individuos,<br> lo que permite lograr la superación de los más terribles desastres, como guerras, <br>pestes, enfermedades, entre otros.<br>
+La solidaridad puede venir de cualquiera y también aplicarse a cualquier persona, <br>incluyendo nuestros familiares, amigos, vecinos, e incluso desconocidos,<br> como niños, adolescentes o adultos en situación de vulnerabilidad y de escasos recursos.
+
+</p>
+  
+	<br>
+	<center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/aF4lMplHxfk">
+		</center>
+  <br>
+  
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="voluntad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Voluntad</h2>
+	<br>
+  <p>Es la potestad de dirigir el accionar propio.<br> Se trata de una propiedad de la personalidad que apela a una especie de fuerza<br> para desarrollar una acción de acuerdo a un resultado esperado. <br>La voluntad implica generalmente la esperanza de una recompensa futura, <br>ya que la persona se esfuerza para reaccionar ante <br>una tendencia actual en pos de un beneficio ulterior.
+
+</p>
+  
+	<br>
+  <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/oYKJKMv7TU">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="moralidad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Moralidad</h2>
+	<br>
+  <p>La moral está constituida por el conjunto de normas y valores <br>que representan el modelo de conducta que debe ser seguido <br>por los individuos en su vida social.<br>La moral es aquello que permite diferenciar <br>aquello que está bien de lo que está mal. <br>En filosofía, la moral es el objeto de estudio de la ética
+</p>
+  
+	<br>
+  <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/GjC1NFQdO0w">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="responsabilidad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Responsabilidad</h2>
+	<br>
+  <p>Responsabilidad es dar cumplimiento a las obligaciones <br>y ser cuidadoso al tomar decisiones o al realizar algo. <br>La responsabilidad es también el hecho de ser responsable de alguien o de algo.<br>En otras palabras, responsabilidad significa cuidar <br>de sí mismo y de los demás, en respuesta <br>a la confianza que las personas depositan entre nosotros. <br>Cuando somos responsables, estamos expresando el sentido de comunidad <br>y de compromiso que asumimos con los demás.
+</p>
+  
+	<br>
+  <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/r2RMuHrD7to">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="generosidad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Generosidad</h2>
+	<br>
+  <p>La generosidad es un valor o rasgo de la personalidad <br>caracterizado por ayudar a los demás de un modo honesto <br>sin esperar obtener nada a cambio. <br>Una persona que practica la generosidad <br>se la suele calificar como generosa
+</p>
+  
+	<br>
+  <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/VADR6RNTJMk">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="alegria"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Alegria</h2>
+	<br>
+  <p>La alegría es un sentimiento positivo que puede surgir entre otras cosas por:<br> la atenuación de un malestar o el logro de una meta objetivo, <br>la observación de la felicidad de alguien<br> a quien apreciamos o la contemplación de algo que nos parece hermoso. 
+</p>
+  
+	<br>
+  <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/GIjCzw4s2nE">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="bondad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Bondad</h2>
+	<br>
+  <p>La bondad es una de las cualidades humanas que mejor reflejan la esencia humana, <br>pues la persona bondadosa es consustancialmente buena, benigna y benévola,<br> y a veces se la relaciona con la amabilidad.<br> Es la inclinación a hacer el bien, e implica afecto <br>hacia el prójimo, condescendencia, comprensión de los demás.
+</p>
+  
+	<br>
+   <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/qiLOLduG1U0">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="justicia"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Justicia</h2>
+	<br>
+  <p>La justicia es un conjunto de valores esenciales sobre los cuales debe basarse una sociedad y el Estado. <br>Estos valores son el respeto, la equidad, la igualdad y la libertad.<br>
+En un sentido formal, la justicia es el conjunto de normas codificadas que el Estado, a través<br> de los organismos competentes, dicta, hace cumplir y sanciona cuando son irrespetadas, <br>suprimiendo la acción o inacción que generó la afectación del bien común.
+
+</p>
+  
+	<br>
+   <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/gsHrGebQSGM">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+
+		<a name="libertad"></a>
+
+	<h2 style="font-size:30px; text-decoration:underline;">Libertadad</h2>
+	<br>
+  <p>Libertad es la facultad o capacidad del ser humano de actuar según sus valores, <br>criterios, razón y voluntad, sin más limitaciones que el respeto a la libertad de los demás.<br>
+Hay libertad cuando las personas pueden obrar sin coacción y opresión por parte de otros sujetos<br>
+La libertad conlleva un sentido de responsabilidad individual y social.<br> Por lo tanto, existe una relación entre la libertad y la ética, ya que actuar en libertad <br>no es dejarse llevar por los impulsos, sino obrar con conciencia en pro del bien propio y común.
+
+
+</p>
+  
+	<br>
+  <center>
+  	<embed width="420" height="315" 
+					src="http://www.youtube.com/v/yQPjiGlz4pY">
+		</center>
+  <br>
+		<p>
+			<a href="#" title="subir">SUBIR</a>
+		</p>
+		<br><br><br>
+</div>
+<br><br><br><br>
+<footer>
+	<div class="nav2">
+			<ul>
+			<li>
+				<a  href="index.html">¿HTML?</a>
+			</li>
+			<li>
+				<a  href="creacion.html">Creacion</a>
+			</li>
+			<li>
+				<a  href="valores.html">Valores</a>
+			</li>
+			<li>
+				<a class="active" href="clasificacion.html">Clasificacion</a>
+			</li>
+			<li>
+				<a href="hoy.html">Hoy</a>
+			</li>
+			<li>
+				<a href="familia.html">Familia</a>
+			</li>
+			<li>
+				<a href="escuela.html">Escuela</a>
+			</li>
+		</ul>
+	</div>
+
+</footer>
+
+</body>
+
+</html>
